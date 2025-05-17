@@ -1,0 +1,16 @@
+import numpy
+import math
+from PIL import Image
+
+def psnr(img1, img2):
+    mse = numpy.mean( (img1 - img2) ** 2 )
+    if mse == 0:
+        return 100
+    PIXEL_MAX = 255.0
+    return 20 * math.log10(PIXEL_MAX / math.sqrt(mse))
+
+img1 = numpy.array(Image.open('D:\\mateuszinho_gameplays\\teste1.jpg'))  ## input imagem perfeita
+img2 = numpy.array(Image.open('D:\\mateuszinho_gameplays\\teste1.jpg'))  ## input imagem aprimorada
+# imgx = Image.open(".\transferir.jpg")
+x = float(psnr(img1,img2))
+print(x)

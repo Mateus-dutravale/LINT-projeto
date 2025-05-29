@@ -47,5 +47,4 @@ def calcular_rmse(img1, img2):
     gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
     gray1, gray2 = _check_and_resize(gray1, gray2)
-
     return np.sqrt(_mse(gray1, gray2))

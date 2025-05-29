@@ -6,11 +6,11 @@ from metricas.Hausdorff import calcular_hausdorff
 from metricas.PSNR import calcular_psnr
 
 # ============== CONFIGURAÇÕES ============== (Altere aqui!)
-MODO = 'arquivo'  # 'pasta' ou 'arquivo'
+MODO = 'pasta'  # 'pasta' ou 'arquivo'
 
 # Configurações para modo PASTA
-PASTA_ORIGINAIS = "caminho/para/pasta_originais"
-PASTA_APRIMORADAS = "caminho/para/pasta_aprimoradas"
+PASTA_ORIGINAIS = "Projeto-LINT/script/downgrade/blurred"
+PASTA_APRIMORADAS = "Projeto-LINT/script/enhancement/scunet/blurred"
 
 # Configurações para modo ARQUIVO
 CAMINHO_ORIGINAL = "Projeto-LINT/script/downgrade/blurred/2nd_camera_online_for_the_Long_Incident_Fire_seen_from_Bald_Mt_at_842_AM_FR-1240_blur.jpg"
@@ -89,7 +89,7 @@ def imprimir_resultados(resultados):
 
     # Médias (apenas para modo pasta)
     if MODO == 'pasta' and len(resultados) > 1:
-        print("\n=== MÉDIAS ===")
+        print("\n=== MEDIAS ===")
         for metrica in colunas[1:]:
             media = sum(float(r[metrica]) for r in resultados) / len(resultados)
             print(f"{metrica}: {round(media, 4)}")

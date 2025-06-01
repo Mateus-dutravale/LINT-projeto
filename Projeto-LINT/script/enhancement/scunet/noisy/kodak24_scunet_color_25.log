@@ -1,4 +1,0 @@
-25-05-25 21:25:21.016 : Model path: model_zoo\scunet_color_25.pth
-25-05-25 21:25:21.017 : Params number: 17946072
-25-05-25 21:25:21.017 : model_name:scunet_color_25, image sigma:25
-25-05-25 21:25:21.017 : C:/Users/cactu/PROJETOS/python/LINT-projeto/Projeto-LINT/script/downgrade/noisy # L_path, for Low-quality images

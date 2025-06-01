@@ -9,15 +9,15 @@ from metricas.PSNR import calcular_psnr
 MODO = 'pasta'  # 'pasta' ou 'arquivo'
 
 # Configurações para modo PASTA
-PASTA_ORIGINAIS = "Projeto-LINT/script/downgrade/blurred"
-PASTA_APRIMORADAS = "Projeto-LINT/script/enhancement/scunet/blurred"
+PASTA_ORIGINAIS = "Projeto-LINT/script/Imagens"
+PASTA_APRIMORADAS = "Projeto-LINT/script/enhancement/BSRGAN_Scunet/scunet-bsrgan"
 
 # Configurações para modo ARQUIVO
 CAMINHO_ORIGINAL = "Projeto-LINT/script/downgrade/blurred/2nd_camera_online_for_the_Long_Incident_Fire_seen_from_Bald_Mt_at_842_AM_FR-1240_blur.jpg"
 CAMINHO_APRIMORADA = "Projeto-LINT/script/enhancement/scunet/blurred/2nd_camera_online_for_the_Long_Incident_Fire_seen_from_Bald_Mt_at_842_AM_FR-1240_blur.jpg"
 
 # Métricas a serem calculadas (True/False)
-CALCULAR_SSIM_RMSE = False
+CALCULAR_SSIM_RMSE = True
 CALCULAR_SNR = True
 CALCULAR_HAUSDORFF = True
 CALCULAR_PSNR = True
